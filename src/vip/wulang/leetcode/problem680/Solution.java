@@ -1,4 +1,4 @@
-package vip.wulang.problem680;
+package vip.wulang.leetcode.problem680;
 
 public class Solution {
     public boolean validPalindrome(String s) {

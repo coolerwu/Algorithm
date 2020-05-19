@@ -1,4 +1,4 @@
-package vip.wulang.problem152;
+package vip.wulang.leetcode.problem152;
 
 class Solution {
     public int maxProduct(int[] nums) {

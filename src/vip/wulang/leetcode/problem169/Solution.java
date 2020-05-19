@@ -1,4 +1,4 @@
-package vip.wulang.problem169;
+package vip.wulang.leetcode.problem169;
 
 import java.util.HashMap;
 import java.util.Map;
