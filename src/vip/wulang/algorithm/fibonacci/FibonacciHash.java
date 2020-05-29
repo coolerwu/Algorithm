@@ -1,4 +1,4 @@
-package vip.wulang.algorithm;
+package vip.wulang.algorithm.fibonacci;
 
 /*
 magic: 1640531527

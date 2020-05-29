@@ -1,4 +1,4 @@
-package vip.wulang.algorithm;
+package vip.wulang.algorithm.fibonacci;
 
 import java.net.URI;
 import java.nio.charset.Charset;
@@ -9,7 +9,7 @@ import java.nio.file.StandardOpenOption;
 
 public class FibonacciMethod {
     public static void main(String[] args) throws Exception {
-        Path path = Paths.get(URI.create("file:///Users/wulang/IdeaProjects/Algorithm/src/vip/wulang/algorithm/FibonacciMethod.txt"));
+        Path path = Paths.get(URI.create("file:///Users/wulang/IdeaProjects/Algorithm/src/vip/wulang/algorithm/fibonacci/FibonacciMethod.txt"));
         double[] f = new double[Integer.MAX_VALUE >> 16];
         f[0] = f[1] = 1;
         for (int i = 2; i < f.length; i++) {
