@@ -9,13 +9,13 @@ public class TestSynchronized01 {
 
     public synchronized void hi() {
         System.out.println(Thread.currentThread());
-        sleep(5);
+        sleepSecond(5);
         System.out.println("hi");
     }
 
     public synchronized void hello() {
         System.out.println(Thread.currentThread());
-        sleep(3);
+        sleepSecond(3);
         System.out.println("hello");
     }
 

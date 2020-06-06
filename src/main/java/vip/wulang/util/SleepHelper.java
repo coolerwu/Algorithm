@@ -6,7 +6,7 @@ public class SleepHelper {
     private SleepHelper() {
     }
 
-    public static void sleep(long timeout) {
+    public static void sleepSecond(long timeout) {
         try {
             TimeUnit.SECONDS.sleep(timeout);
         } catch (InterruptedException e) {
