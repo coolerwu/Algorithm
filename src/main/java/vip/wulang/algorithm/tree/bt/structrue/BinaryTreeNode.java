@@ -1,5 +1,8 @@
-package vip.wulang.algorithm.tree;
+package vip.wulang.algorithm.tree.bt.structrue;
 
+/**
+ * 二叉树的结点。
+ */
 public class BinaryTreeNode {
     public int val;
     public BinaryTreeNode left;

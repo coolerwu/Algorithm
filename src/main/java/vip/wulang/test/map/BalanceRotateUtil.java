@@ -1,6 +1,6 @@
 package vip.wulang.test.map;
 
-import vip.wulang.algorithm.tree.BinaryTreeNode;
+import vip.wulang.algorithm.tree.bt.structrue.BinaryTreeNode;
 
 public class BalanceRotateUtil {
     /**
