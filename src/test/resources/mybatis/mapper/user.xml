@@ -6,4 +6,8 @@
     <select id="findById" resultType="map">
         select * from user_db where id = #{id}
     </select>
+
+    <select id="findAll" resultType="map">
+        select * from user_db
+    </select>
 </mapper>
