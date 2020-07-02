@@ -12,8 +12,19 @@ public class QuickSort implements Sort {
         }
 
         int partition = partition(arr, l, r);
-        process(arr, l, partition - 1);
-        process(arr, partition + 1, r );
+
+        int x = partition - 1;
+        while (x >= 0 && arr[x] == arr[partition]) {
+            x--;
+        }
+
+        int y = partition + 1;
+        while (y <= r && arr[y] == arr[partition]) {
+            y++;
+        }
+
+        process(arr, l, x);
+        process(arr, y, r);
     }
 
     private int partition(int[] arr, int l, int r) {
@@ -23,8 +34,8 @@ public class QuickSort implements Sort {
         if (r == l) {
             return r;
         }
-        int base = arr[r];
         int index = r;
+        int base = arr[index];
 
         while (l <= r) {
             while (l <= r && arr[l] <= base) {
@@ -51,7 +62,7 @@ public class QuickSort implements Sort {
     }
 
     public static void main(String[] args) {
-        SortUtil.start(new QuickSort(),5000000, 500000);
+        SortUtil.start(new QuickSort(),50000000, 100);
     }
 
     private void process1(int[] arr, int l, int r) {
