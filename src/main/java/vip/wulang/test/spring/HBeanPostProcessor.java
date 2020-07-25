@@ -9,13 +9,13 @@ public class HBeanPostProcessor implements BeanPostProcessor {
 
     @Override
     public Object postProcessBeforeInitialization(Object bean, String beanName) throws BeansException {
-        System.out.println("ad");
-        return null;
+        System.out.println(beanName + "=======>start");
+        return bean;
     }
 
     @Override
     public Object postProcessAfterInitialization(Object bean, String beanName) throws BeansException {
-        System.out.println("fs");
-        return null;
+        System.out.println(beanName + "=======>end");
+        return bean;
     }
 }

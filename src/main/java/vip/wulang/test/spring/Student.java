@@ -5,10 +5,14 @@ import org.springframework.stereotype.Component;
 
 @Component
 public class Student {
+    private final SignRecordService signRecordService;
+
     @Autowired
-    private Class cls;
+    public Student(SignRecordService signRecordService) {
+        this.signRecordService = signRecordService;
+    }
 
     public void ccc() {
-
+        signRecordService.add();
     }
 }
